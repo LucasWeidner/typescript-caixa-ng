@@ -1,0 +1,155 @@
+/* Container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fundo branco para o container */
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    color: #007BFF; /* Cor azul para o título */
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário */
+  .formulario-tabela {
+    margin-bottom: 15px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os itens */
+    margin-bottom: 20px;
+  }
+  
+  .formulario > div {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007BFF; /* Azul para os labels */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #007BFF; /* Bordas azuis */
+    border-radius: 5px;
+    background-color: #fff; /* Fundo branco para os inputs */
+    color: #333;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Botões - Editar e Salvar */
+  button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Verde para os botões Editar e Salvar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #218838; /* Cor um pouco mais escura quando o mouse passa sobre o botão */
+  }
+  
+  /* Botão "Apagar" - Vermelho */
+  button.apagar {
+    background-color: #dc3545; /* Vermelho para o botão Apagar */
+  }
+  
+  button.apagar:hover {
+    background-color: #c82333; /* Cor mais escura quando o mouse passa sobre o botão Apagar */
+  }
+  
+  /* Tabela */
+  .tabela {
+    margin-top: 30px;
+    overflow-x: auto;
+    background-color: #fff; /* Fundo branco para a área da tabela */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #007BFF; /* Bordas azuis para a tabela */
+    background-color: #fff; /* Fundo branco para as células */
+  }
+  
+  th {
+    background-color: #f4f4f4; /* Cor mais clara para o cabeçalho */
+    font-weight: bold;
+    color: #007BFF; /* Azul para o cabeçalho */
+  }
+  
+  td {
+    background-color: #fff; /* Fundo branco para as células da tabela */
+    color: #333;
+  }
+  
+  td button {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  td button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Estilos para os campos de radio */
+  input[type="radio"] {
+    margin: 5px 10px 5px 0;
+  }
+  
+  input[type="checkbox"] {
+    margin: 5px 10px 5px 0;
+  }
+  
+  /* Estilos para o botão de "Salvar" */
+  button {
+    width: 100%;
+    background-color: #28a745; /* Verde para salvar */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Estilo para os campos de entrada */
+  input[type="text"], input[type="number"], select {
+    background-color: #f8f9fa; /* Fundo levemente cinza para campos de entrada */
+  }
+  
+  /* Para os inputs de texto e select */
+  input[type="text"], input[type="number"], select {
+    font-size: 14px;
+  }
+  
