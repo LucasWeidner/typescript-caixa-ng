@@ -9,15 +9,16 @@ import { Cliente } from '../../../models/cliente';
   styleUrl: './cliente-cadastro.component.css'
 })
 export class ClienteCadastroComponent {
-  
-  @Output() salvarEvento = new EventEmitter<string>();
+  // Evento de saída que permite ao componente filho (ClienteCadastroComponent)
+  // enviar uma string para o componente pai (ClienteComponent)
+  @Output() salvarEvento = new EventEmitter<void>();
 
+  // O componente pai vai passar o objeto do cliente de acordo com modo:
+  // - modo de cadastro os campos do cliente estarão vazios
+  // - modo de editar os campos do cliente estarão preenchidos
   @Input() cliente?: Cliente;
-
-  nome: string ="";
-
+  
   salvar() {
-    this.salvarEvento.emit(this.nome);
+    this.salvarEvento.emit();
   }
-
 }
